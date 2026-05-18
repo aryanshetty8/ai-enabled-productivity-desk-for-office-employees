@@ -1,8 +1,4 @@
 id,username,role,name,section,designation,joining_date,email,password_hash
 1,admin,admin,Admin User,Administration,System Admin,2020-01-01,admin@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
 2,ramesh,employee,Ramesh Kumar,Wildlife,Forest Ranger,2021-03-15,ramesh@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
-3,sita,employee,Sita Devi,Plantation,Jr. Officer,2022-06-01,sita@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
-4,ajay,employee,Ajay Sharma,Administration,Clerk,2020-09-10,ajay@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
-5,pooja,employee,Pooja Nair,Finance,Accountant,2021-11-20,pooja@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
-6,vikram,employee,Vikram Sen,Research,Research Associate,2023-02-11,vikram@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
-7,meera,employee,Meera Das,Enforcement,Beat Officer,2022-04-08,meera@forest.gov.in,$2a$10$UCvXBhVwakMvhBSlasj2eeefGYtORFoleuSwSPKKSzmwDPcepwkuC
+6,vikram,employee,Vikram Sen,Research,Research Associate,2023-02-11,vikramsen@forest.gov.in,$2a$10$gtyPKq008RA1t//QWK3fGulgYLmIIXwXPPnAUDPEuDOgItQDTkkJi

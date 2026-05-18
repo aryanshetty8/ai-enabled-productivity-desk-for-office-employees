@@ -20,6 +20,7 @@ export async function GET(request: Request) {
 
   const files = await readFiles();
   const { searchParams } = new URL(request.url);
+  const raw = searchParams.get("raw") === "1";
   const scopedFiles =
     session.role === "employee" ? files.filter((file) => file.assigned_to === session.username) : files;
   const filtered = filterFiles(scopedFiles, {
@@ -29,6 +30,10 @@ export async function GET(request: Request) {
     from: searchParams.get("from"),
     to: searchParams.get("to")
   });
+
+  if (raw && session.role === "admin") {
+    return NextResponse.json(filtered);
+  }
 
   return NextResponse.json(withDerivedStatus(filtered));
 }

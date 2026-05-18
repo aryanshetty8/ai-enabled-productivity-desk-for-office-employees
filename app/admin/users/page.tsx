@@ -9,8 +9,8 @@ export default async function AdminUsersPage() {
     <div className="space-y-6">
       <PageHeader
         eyebrow="Admin Users"
-        title="User Management"
-        description="Full CRUD management for accounts persisted in users.csv."
+        title="Employee And Account Management"
+        description="Add, edit, and delete employee or admin accounts persisted in users.csv."
       />
       <UserManagement initialUsers={sanitizeUsers(users)} />
     </div>
