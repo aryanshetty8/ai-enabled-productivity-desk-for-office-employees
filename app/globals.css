@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #edf3e7;
+  --foreground: #0f2512;
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-strong: rgba(255, 255, 255, 0.96);
+  --border: rgba(25, 70, 26, 0.14);
+  --muted: #5e705f;
+  --danger: #dc2626;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(200, 183, 106, 0.28), transparent 24rem),
+    radial-gradient(circle at bottom right, rgba(46, 125, 46, 0.18), transparent 28rem),
+    linear-gradient(180deg, #f5f7ef 0%, #edf3e7 48%, #e6efe0 100%);
+  color: var(--foreground);
+}
+
+* {
+  border-color: var(--border);
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif tracking-tight text-forest-900;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-forest-900/10 bg-white/85 shadow-panel backdrop-blur;
+  }
+
+  .panel-muted {
+    @apply rounded-2xl border border-forest-900/8 bg-forest-50/80 shadow-panel;
+  }
+
+  .data-grid {
+    @apply grid gap-4 md:grid-cols-2 xl:grid-cols-4;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+}
